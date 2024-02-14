@@ -1,0 +1,99 @@
+
+body {
+  background-color: #e1f0da;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #b8ceaa;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto 60px auto;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #333;
+  margin: 50px auto 60px auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #e1f0da;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.task-name {
+  font-weight: bold;
+  color: #040b02;
+  font-size: 25px;
+}
+
+.task-description {
+  margin-top: 8px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.card-content .line-through {
+  text-decoration: line-through;
+}
+
+.new-task-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.new-task-input .MuiTextField-root {
+  margin-right: 5px;
+  width: 100%;
+}
+
+.new-task-input .MuiButton-root {
+  height: 56px;
+  width: 150px;
+}
+
+.add-task-button:hover {
+  background-color: #e1f0da;
+}
+
+@media screen {
+  .container {
+    padding: 10px;
+  }
+}
